@@ -1,0 +1,27 @@
+# Dependencies
+
+# Build artifacts
+dist/
+build/
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Hermes / OS
+.hermes/
+.DS_Store
+Thumbs.db
+*.log
