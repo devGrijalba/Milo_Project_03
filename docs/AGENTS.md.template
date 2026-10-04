@@ -45,7 +45,7 @@ python tools/ds_inject.py --text "..."         # inyectar prompt en DeepSeek
 
 ## Fuentes de verdad — jerarquía
 
-1. **`MILO_SEEDS_COMPACTAS_GUIÓN_0001-1000.md`** — único documento autorizado para
+1. **`Motor_guiones/data/seeds.json`** — único documento autorizado para
    resumir o narrar el banco. Todo lo demás queda excluido.
 2. **`Motor_guiones/AGENTS.md`** — política del motor: cómo se construye un episodio.
 3. **`.agents/skills/`** — 35 skills de este proyecto, bajo demanda.
@@ -58,7 +58,7 @@ Si chocan, manda el archivo anidado más cercano al archivo que se está editand
 ```text
 Milo_Project_03/
 ├── AGENTS.md                                     ← este índice
-├── MILO_SEEDS_COMPACTAS_GUIÓN_0001-1000.md        ← banco canónico
+├── Motor_guiones/data/seeds.json                  ← banco canónico (1000 semillas)
 ├── Motor_guiones/                                ← motor 8.0.0 (AGENTS.md propio)
 ├── .agents/skills/                               ← 35 skills (project-local)
 ├── tools/                                        ← utilidades

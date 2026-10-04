@@ -14,42 +14,52 @@ El repositorio público quedó con **un solo archivo**:
 
 | Archivo | Tamaño |
 |---|---|
-| `MILO_SEEDS_COMPACTAS_GUIÓN_0001-1000.md` | 1.935.995 bytes |
+| `Motor_guiones/data/seeds.json` | 1.898.317 bytes |
 
 **Por qué importa:** antes había dos representaciones del mismo banco —10 archivos
-`30_0X_*.md` (~59 MB) más el compacto— y ambos eran públicos en el historial de Git.
-`MIGRATION_AUDIT.md` del propio motor criticaba exactamente eso: *"Dos bancos de semillas
-coexistían"*. Ahora no hay ambigüedad de qué es canon.
+`30_0X_*.md` (~59 MB), el compacto Markdown, y ahora el JSON de producción— y todos
+eran públicos en el historial de Git. `MIGRATION_AUDIT.md` del propio motor criticaba
+exactamente eso: *"Dos bancos de semillas coexistían"*. Ahora hay una sola fuente, y es
+la que el motor consume en runtime y la que DeepSeek puede leer completa.
 
-SHA256 verificado idéntico antes y después de la limpieza:
-`a42f31e9369f270cc97a651b6eefa394bb15a4d43a557de9b63e81703e1fddc3`
+**Formato:** `2.1.0-compact` / `production-compact`, 1000 semillas, contrato declarado
+en `selection_contract` (`required_seed_fields`: `seed_id`, `family_id`, `territorio`,
+`semilla`, `revision`).
+
+SHA256 verificado idéntico en ambas copias del motor:
+`20587d8c5f75bdf5ab0ce7473f3b11ddac532245b6bc03160f657ec2ac7e6a62`
+
+**Por qué JSON y no Markdown:** el `.md` de 1,9 MB~(420k tokens) sí cabía en la
+ventana de 1M del modelo, pero DeepSeek **no lo recorría**: el gate midió solo los
+registros 1–17 y reportó un total de 17 sobre 1000
+(`GITHUB_SEED_ACCESS = FAIL`). El JSON plano se lee completo.
 
 ---
 
 ## Paso 1 — Se le indica a DeepSeek que lea el banco ✅
 
-**Cómo:** inyección de prompt vía CDP (Chrome con perfil limpio, puerto 9222). Herramienta:
-`tools/ds_inject.py`.
+**Cómo:** el archivo se **adjunta** a la conversación vía CDP (Chrome con perfil limpio,
+puertos 9222). Herramienta: `tools/ds_upload.py`.
+
+Se descartó la lectura por URL pública: el Markdown de 1,9 MB cabía de sobra en la
+ventana de 1M del modelo, pero DeepSeek solo recorría los primeros registros
+(`GITHUB_SEED_ACCESS = FAIL`, registros 1–17). Adjuntar el archivo es además el camino
+que la propia web soporta: su `input[type=file]` declara `.json` en `accept`.
 
 **Prompt enviado** (el que lee y confirma):
 
 ```
-Lee el documento MILO_SEEDS_COMPACTAS_GUIÓN_0001-1000.md completo que está en este
-repositorio público:
+Lee el archivo JSON que te adjunté.
 
-https://github.com/devGrijalba/Milo_Project_03
+Responde SOLO con un objeto JSON válido, sin texto antes ni después, sin bloques de código markdown.
 
-El archivo está en la raíz del repo. Si no puedes abrirlo desde la web, usa la URL directa:
+Formato exacto:
 
-https://raw.githubusercontent.com/devGrijalba/Milo_Project_03/main/MILO_SEEDS_COMPACTAS_GUI%C3%93N_0001-1000.md
+{"records_count": <número de objetos>,
+ "seed_ids": ["...", "...", "..."],
+ ...}
 
-Es un banco de 1000 semillas para generación de guiones (registros 0001-1000).
-
-Cuando lo hayas leído, confírmame únicamente esto:
-1. cuántas semillas tiene,
-2. qué campos trae cada semilla,
-3. y el título exacto de las 3 primeras semillas (0001, 0002, 0003).
-No me resumas el banco entero todavía. Solo esa confirmación.
+No infieras nada. Cada valor debe salir del archivo adjunto. Si no puedes leer un campo, devuelve null.
 ```
 
 **Respuesta de DeepSeek:**

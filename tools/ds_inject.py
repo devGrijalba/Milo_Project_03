@@ -40,20 +40,11 @@ SEL_FILE = HERE / "ds_selectors.json"
 DEFAULT_CDP = "http://127.0.0.1:9222"
 DEFAULT_URL = "https://chat.deepseek.com/"
 
-DEFAULT_PROMPT = """Lee el documento MILO_SEEDS_COMPACTAS_GUIÓN_0001-1000.md completo que está en este repositorio público:
-
-https://github.com/devGrijalba/Milo_Project_03
-
-El archivo está en la raíz del repo. Si no puedes abrirlo desde la web, usa la URL directa:
-
-https://raw.githubusercontent.com/devGrijalba/Milo_Project_03/main/MILO_SEEDS_COMPACTAS_GUI%C3%93N_0001-1000.md
-
-Es un banco de 1000 semillas para generación de guiones (registros 0001-1000).
-
-Cuando lo hayas leído, confírmame únicamente esto:
+DEFAULT_PROMPT = """Te adjunté el archivo JSON con el banco de 1000 semillas de MILO
+(2.1.0-compact, production-compact). Confírmame únicamente esto:
 1. cuántas semillas tiene,
 2. qué campos trae cada semilla,
-3. y el título exacto de las 3 primeras semillas (0001, 0002, 0003).
+3. y el seed_id exacto de las semillas #1, #500 y #1000.
 No me resumas el banco entero todavía. Solo esa confirmación."""
 
 # El prompt viaja como argumento de JS via json.dumps: nunca dentro de un
