@@ -1,4 +1,3 @@
-# El motor vive SOLO en local. El repositorio publica unicamente data/seeds.json
+# El motor vive SOLO en local. El repositorio publica unicamente el banco.
 *
-!data/
-!data/seeds.json
+!seeds_1000_MILO_GUION_COMPACT.json
