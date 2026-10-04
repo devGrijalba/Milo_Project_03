@@ -1,0 +1,374 @@
+{
+  "episode_id": "EP0099",
+  "seed_id": "MILO-S0001",
+  "bank_version": "2.1.0-compact",
+  "seed_hash": "715603ef17316e12c798db9a12db295462588b5ee35c5ee891b9b16107339467",
+  "seed_snapshot": {
+    "seed_id": "MILO-S0001",
+    "family_id": "F001",
+    "territorio": "Padre y cariño",
+    "angulo": "primera_vez",
+    "titulo": "Plato tapado: la primera vez",
+    "semilla": "Papá deja la cena aunque Milo llega tarde. Milo interpreta el silencio como distancia. Tratamiento: Milo observa por primera vez la situación y debe comprobar su interpretación antes de actuar.",
+    "conflicto": "Milo interpreta el silencio como distancia",
+    "accion_visible": "papá deja la cena aunque Milo llega tarde",
+    "objeto_emocional": "plato tapado",
+    "giro_posible": "el plato demuestra que alguien contó con su regreso",
+    "desarrollo_requerido": "Mostrar situación → lectura inicial → detalle que contradice → pregunta o gesto concreto.",
+    "milo_role": "adulto; recuerdo infantil solo si el guion lo justifica",
+    "personajes_requeridos": [
+      "Milo",
+      "papá"
+    ],
+    "personajes_secundarios": "Resolver identidad y disponibilidad de referencias desde canon antes de producir; no inventar anclas aprobadas.",
+    "motor_editorial": "identificacion",
+    "revision": {
+      "calidad": 89.0,
+      "afinidad": 90.0,
+      "novedad": 85,
+      "compuesto": 88.75,
+      "nivel": "PRIORITARIA",
+      "elegible": true,
+      "bloqueos": []
+    }
+  },
+  "title": "El plato y la conversación",
+  "central_conflict": "Milo interpreta el silencio de papá como distancia.",
+  "payoff": "Comprende el cuidado concreto y decide acompañarlo.",
+  "share_recipient": "Una persona cuyo padre expresa cariño mediante cuidados cotidianos.",
+  "novelty_justification": "Demostración de contrato basada en plato tapado; no se declara original respecto a EP0002.",
+  "hooks": [
+    {
+      "id": "H1",
+      "text": "Mi papá nunca decía «te quiero».",
+      "reason": "Carencia reconocible y promesa de reinterpretación."
+    },
+    {
+      "id": "H2",
+      "text": "Mi plato siempre me estaba esperando.",
+      "reason": "Objeto como evidencia inicial."
+    },
+    {
+      "id": "H3",
+      "text": "Llegué temprano y entendí a papá.",
+      "reason": "Curiosidad por una escena observable."
+    }
+  ],
+  "selected_hook_id": "H1",
+  "music": false,
+  "sfx": false,
+  "beats": [
+    {
+      "beat_id": "B01",
+      "function": "hook",
+      "narration": "Mi papá nunca decía «te quiero».",
+      "new_information": "Milo adulto observa a papá junto al plato tapado.",
+      "visual_action": "Milo adulto observa a papá junto al plato tapado.",
+      "narration_visual_link": "La acción muestra la conducta descrita en este beat; prueba de contrato, pendiente juicio creativo.",
+      "characters": [
+        "Milo adulto",
+        "papá"
+      ],
+      "world_id": "kitchen_night",
+      "voice_intention": "Firme y contenida",
+      "pause_after_s": 0.1,
+      "text_emphasis": "TE QUIERO",
+      "shot": {
+        "scale": "medium",
+        "motion": "still",
+        "motion_reason": "La quietud permite observar el gesto sin distracción.",
+        "continuity": "Misma cocina nocturna; Milo adulto y papá con vestuario del canon resuelto por referencias. Mantener estado del plato según acción.",
+        "subtitle_safe_top": true
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0,
+        "reason": "Pasar a la nueva prueba o reacción."
+      },
+      "director_direction": {
+        "viewer_emotion": "Comprensión cálida del cuidado cotidiano",
+        "narrator_intention": "Firme y contenida",
+        "emotional_entry": "Observación contenida",
+        "emotional_exit": "Comprensión sin dramatismo",
+        "emphasis": "TE QUIERO",
+        "pause_reason": "Procesar nueva información",
+        "visual_sync": "Milo adulto observa a papá junto al plato tapado.",
+        "forbidden_delivery": "Llanto exagerado, tragedia o tono publicitario"
+      },
+      "director_voice_text": "Mi papá nunca decía «te quiero»."
+    },
+    {
+      "beat_id": "B02",
+      "function": "recognition",
+      "narration": "Yo escuchaba silencio al volver.",
+      "new_information": "Milo entra al pasillo nocturno; papá aún no aparece.",
+      "visual_action": "Milo entra al pasillo nocturno; papá aún no aparece.",
+      "narration_visual_link": "La acción muestra la conducta descrita en este beat; prueba de contrato, pendiente juicio creativo.",
+      "characters": [
+        "Milo adulto",
+        "papá"
+      ],
+      "world_id": "hallway_night",
+      "voice_intention": "Íntima y natural",
+      "pause_after_s": 0.1,
+      "text_emphasis": "SILENCIO",
+      "shot": {
+        "scale": "medium",
+        "motion": "still",
+        "motion_reason": "La quietud permite observar el gesto sin distracción.",
+        "continuity": "Misma cocina nocturna; Milo adulto y papá con vestuario del canon resuelto por referencias. Mantener estado del plato según acción.",
+        "subtitle_safe_top": true
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0,
+        "reason": "Pasar a la nueva prueba o reacción."
+      },
+      "director_direction": {
+        "viewer_emotion": "Comprensión cálida del cuidado cotidiano",
+        "narrator_intention": "Íntima y natural",
+        "emotional_entry": "Observación contenida",
+        "emotional_exit": "Comprensión sin dramatismo",
+        "emphasis": "SILENCIO",
+        "pause_reason": "Procesar nueva información",
+        "visual_sync": "Milo entra al pasillo nocturno; papá aún no aparece.",
+        "forbidden_delivery": "Llanto exagerado, tragedia o tono publicitario"
+      },
+      "director_voice_text": "Yo escuchaba silencio al volver."
+    },
+    {
+      "beat_id": "B03",
+      "function": "proof",
+      "narration": "Pero mi plato seguía tapado.",
+      "new_information": "Insert del plato tapado, intacto en la mesa.",
+      "visual_action": "Insert del plato tapado, intacto en la mesa.",
+      "narration_visual_link": "La acción muestra la conducta descrita en este beat; prueba de contrato, pendiente juicio creativo.",
+      "characters": [
+        "Milo adulto",
+        "papá"
+      ],
+      "world_id": "kitchen_night",
+      "voice_intention": "Íntima y natural",
+      "pause_after_s": 0.1,
+      "text_emphasis": "MI PLATO",
+      "shot": {
+        "scale": "insert",
+        "motion": "still",
+        "motion_reason": "La quietud permite observar el gesto sin distracción.",
+        "continuity": "Misma cocina nocturna; Milo adulto y papá con vestuario del canon resuelto por referencias. Mantener estado del plato según acción.",
+        "subtitle_safe_top": true
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0,
+        "reason": "Pasar a la nueva prueba o reacción."
+      },
+      "director_direction": {
+        "viewer_emotion": "Comprensión cálida del cuidado cotidiano",
+        "narrator_intention": "Íntima y natural",
+        "emotional_entry": "Observación contenida",
+        "emotional_exit": "Comprensión sin dramatismo",
+        "emphasis": "MI PLATO",
+        "pause_reason": "Procesar nueva información",
+        "visual_sync": "Insert del plato tapado, intacto en la mesa.",
+        "forbidden_delivery": "Llanto exagerado, tragedia o tono publicitario"
+      },
+      "director_voice_text": "Pero mi plato seguía tapado."
+    },
+    {
+      "beat_id": "B04",
+      "function": "turn",
+      "narration": "Una noche llegué antes que él.",
+      "new_information": "Milo entra a la cocina cuando papá empieza a preparar la cena.",
+      "visual_action": "Milo entra a la cocina cuando papá empieza a preparar la cena.",
+      "narration_visual_link": "La acción muestra la conducta descrita en este beat; prueba de contrato, pendiente juicio creativo.",
+      "characters": [
+        "Milo adulto",
+        "papá"
+      ],
+      "world_id": "kitchen_night",
+      "voice_intention": "Íntima y natural",
+      "pause_after_s": 0.1,
+      "text_emphasis": "ANTES QUE ÉL",
+      "shot": {
+        "scale": "medium",
+        "motion": "still",
+        "motion_reason": "La quietud permite observar el gesto sin distracción.",
+        "continuity": "Misma cocina nocturna; Milo adulto y papá con vestuario del canon resuelto por referencias. Mantener estado del plato según acción.",
+        "subtitle_safe_top": true
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0,
+        "reason": "Pasar a la nueva prueba o reacción."
+      },
+      "director_direction": {
+        "viewer_emotion": "Comprensión cálida del cuidado cotidiano",
+        "narrator_intention": "Íntima y natural",
+        "emotional_entry": "Observación contenida",
+        "emotional_exit": "Comprensión sin dramatismo",
+        "emphasis": "ANTES QUE ÉL",
+        "pause_reason": "Procesar nueva información",
+        "visual_sync": "Milo entra a la cocina cuando papá empieza a preparar la cena.",
+        "forbidden_delivery": "Llanto exagerado, tragedia o tono publicitario"
+      },
+      "director_voice_text": "Una noche llegué antes que él."
+    },
+    {
+      "beat_id": "B05",
+      "function": "revelation",
+      "narration": "Vi sus manos preparar mi cena.",
+      "new_information": "Papá sirve comida y cubre el plato con cuidado.",
+      "visual_action": "Papá sirve comida y cubre el plato con cuidado.",
+      "narration_visual_link": "La acción muestra la conducta descrita en este beat; prueba de contrato, pendiente juicio creativo.",
+      "characters": [
+        "Milo adulto",
+        "papá"
+      ],
+      "world_id": "kitchen_night",
+      "voice_intention": "Íntima y natural",
+      "pause_after_s": 0.1,
+      "text_emphasis": "SUS MANOS",
+      "shot": {
+        "scale": "insert",
+        "motion": "push_in",
+        "motion_reason": "Acercamiento al gesto de cuidado.",
+        "continuity": "Misma cocina nocturna; Milo adulto y papá con vestuario del canon resuelto por referencias. Mantener estado del plato según acción.",
+        "subtitle_safe_top": true
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0,
+        "reason": "Pasar a la nueva prueba o reacción."
+      },
+      "director_direction": {
+        "viewer_emotion": "Comprensión cálida del cuidado cotidiano",
+        "narrator_intention": "Íntima y natural",
+        "emotional_entry": "Observación contenida",
+        "emotional_exit": "Comprensión sin dramatismo",
+        "emphasis": "SUS MANOS",
+        "pause_reason": "Procesar nueva información",
+        "visual_sync": "Papá sirve comida y cubre el plato con cuidado.",
+        "forbidden_delivery": "Llanto exagerado, tragedia o tono publicitario"
+      },
+      "director_voice_text": "Vi sus manos preparar mi cena."
+    },
+    {
+      "beat_id": "B06",
+      "function": "confirmation",
+      "narration": "Me preguntó si había comido.",
+      "new_information": "Papá señala el plato y mira a Milo.",
+      "visual_action": "Papá señala el plato y mira a Milo.",
+      "narration_visual_link": "La acción muestra la conducta descrita en este beat; prueba de contrato, pendiente juicio creativo.",
+      "characters": [
+        "Milo adulto",
+        "papá"
+      ],
+      "world_id": "kitchen_night",
+      "voice_intention": "Íntima y natural",
+      "pause_after_s": 0.1,
+      "text_emphasis": "¿YA COMISTE?",
+      "shot": {
+        "scale": "medium",
+        "motion": "still",
+        "motion_reason": "La quietud permite observar el gesto sin distracción.",
+        "continuity": "Misma cocina nocturna; Milo adulto y papá con vestuario del canon resuelto por referencias. Mantener estado del plato según acción.",
+        "subtitle_safe_top": true
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0,
+        "reason": "Pasar a la nueva prueba o reacción."
+      },
+      "director_direction": {
+        "viewer_emotion": "Comprensión cálida del cuidado cotidiano",
+        "narrator_intention": "Íntima y natural",
+        "emotional_entry": "Observación contenida",
+        "emotional_exit": "Comprensión sin dramatismo",
+        "emphasis": "¿YA COMISTE?",
+        "pause_reason": "Procesar nueva información",
+        "visual_sync": "Papá señala el plato y mira a Milo.",
+        "forbidden_delivery": "Llanto exagerado, tragedia o tono publicitario"
+      },
+      "director_voice_text": "Me preguntó si había comido."
+    },
+    {
+      "beat_id": "B07",
+      "function": "response",
+      "narration": "Esta vez me quedé a conversar.",
+      "new_information": "Milo acerca una silla; papá se sienta a su lado.",
+      "visual_action": "Milo acerca una silla; papá se sienta a su lado.",
+      "narration_visual_link": "La acción muestra la conducta descrita en este beat; prueba de contrato, pendiente juicio creativo.",
+      "characters": [
+        "Milo adulto",
+        "papá"
+      ],
+      "world_id": "kitchen_night",
+      "voice_intention": "Íntima y natural",
+      "pause_after_s": 0.1,
+      "text_emphasis": "ME QUEDÉ",
+      "shot": {
+        "scale": "medium",
+        "motion": "still",
+        "motion_reason": "La quietud permite observar el gesto sin distracción.",
+        "continuity": "Misma cocina nocturna; Milo adulto y papá con vestuario del canon resuelto por referencias. Mantener estado del plato según acción.",
+        "subtitle_safe_top": true
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0,
+        "reason": "Pasar a la nueva prueba o reacción."
+      },
+      "director_direction": {
+        "viewer_emotion": "Comprensión cálida del cuidado cotidiano",
+        "narrator_intention": "Íntima y natural",
+        "emotional_entry": "Observación contenida",
+        "emotional_exit": "Comprensión sin dramatismo",
+        "emphasis": "ME QUEDÉ",
+        "pause_reason": "Procesar nueva información",
+        "visual_sync": "Milo acerca una silla; papá se sienta a su lado.",
+        "forbidden_delivery": "Llanto exagerado, tragedia o tono publicitario"
+      },
+      "director_voice_text": "Esta vez me quedé a conversar."
+    },
+    {
+      "beat_id": "B08",
+      "function": "closing",
+      "narration": "También podía quererlo quedándome un rato.",
+      "new_information": "Dos personajes conversan junto a la mesa; plato servido entre ellos.",
+      "visual_action": "Dos personajes conversan junto a la mesa; plato servido entre ellos.",
+      "narration_visual_link": "La acción muestra la conducta descrita en este beat; prueba de contrato, pendiente juicio creativo.",
+      "characters": [
+        "Milo adulto",
+        "papá"
+      ],
+      "world_id": "kitchen_night",
+      "voice_intention": "Íntima y natural",
+      "pause_after_s": 0.1,
+      "text_emphasis": "UN RATO",
+      "shot": {
+        "scale": "medium",
+        "motion": "still",
+        "motion_reason": "La quietud permite observar el gesto sin distracción.",
+        "continuity": "Misma cocina nocturna; Milo adulto y papá con vestuario del canon resuelto por referencias. Mantener estado del plato según acción.",
+        "subtitle_safe_top": true
+      },
+      "transition": {
+        "type": "cut",
+        "duration_s": 0,
+        "reason": "Pasar a la nueva prueba o reacción."
+      },
+      "director_direction": {
+        "viewer_emotion": "Comprensión cálida del cuidado cotidiano",
+        "narrator_intention": "Íntima y natural",
+        "emotional_entry": "Observación contenida",
+        "emotional_exit": "Comprensión sin dramatismo",
+        "emphasis": "UN RATO",
+        "pause_reason": "Procesar nueva información",
+        "visual_sync": "Dos personajes conversan junto a la mesa; plato servido entre ellos.",
+        "forbidden_delivery": "Llanto exagerado, tragedia o tono publicitario"
+      },
+      "director_voice_text": "También podía quererlo quedándome un rato."
+    }
+  ]
+}

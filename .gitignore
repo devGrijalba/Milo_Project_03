@@ -22,6 +22,9 @@ venv/
 
 # Hermes / OS
 .hermes/
+# AGENTS.override.md es el context file personal que Hermes carga EN LUGAR del
+# AGENTS.md commiteado. Es deliberadamente local: no se versiona.
+AGENTS.override.md
 .DS_Store
 Thumbs.db
 *.log

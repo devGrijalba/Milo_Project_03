@@ -1,0 +1,18 @@
+{
+  "claimed_ids": [
+    "MILO-S0001",
+    "MILO-R0004",
+    "MILO-R0008",
+    "MILO-R0013",
+    "MILO-R0017",
+    "MILO-S0001",
+    "MILO-R0002",
+    "MILO-R0017"
+  ],
+  "invalid_ids": [],
+  "total_detected_by_model": 17,
+  "samples_found": 8,
+  "access_partial": false,
+  "total_note": "DeepSeek did not report exactly 1000. That is a FACT check, not an access check; recorded, not failed on its own.",
+  "gate_verdict": "PASS"
+}

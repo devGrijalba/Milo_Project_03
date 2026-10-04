@@ -1,0 +1,55 @@
+{
+  "version": "2.0.0",
+  "identity": "Milo Piensa Demasiado — warm illustrated emotional storytelling",
+  "style_lock": [
+    "2D/2.5D storybook digital illustration with soft watercolor-like texture",
+    "clean rounded shapes and gentle hand-painted texture",
+    "warm domestic palette with controlled cool night scenes",
+    "soft believable light and subtle depth",
+    "emotion through pose, composition, objects and space",
+    "vertical 9:16 composition designed for Facebook Reels"
+  ],
+  "forbidden": [
+    "photorealistic",
+    "live action",
+    "3D glossy render",
+    "noir detective aesthetic",
+    "black spherical Milo identity",
+    "cinematic anamorphic photography",
+    "film grain as default",
+    "hyper-detailed skin",
+    "text inside generated image",
+    "logos",
+    "watermarks",
+    "generic stock-photo composition"
+  ],
+  "composition_rules": [
+    "one dominant visual idea per image",
+    "prefer one primary subject; secondary family member only when narratively necessary",
+    "use emotional objects as foreground or focal anchors",
+    "vary shot scale across consecutive beats",
+    "leave intentional negative space only when required by composition/text overlay",
+    "do not center every character",
+    "show emotion with gesture and spatial relationship, not abstract adjectives"
+  ],
+  "shot_scales": [
+    "establishing",
+    "medium",
+    "close_up",
+    "insert",
+    "extreme_close_up",
+    "emotional_wide"
+  ],
+  "emotional_objects": {
+    "covered_plate": "silent love",
+    "television_on": "fear of an empty house",
+    "jar": "parent aging",
+    "empty_cup": "absence",
+    "door": "distance/sibling memory",
+    "empty_chair": "absence",
+    "repaired_toy": "care",
+    "hallway_light": "someone waiting awake",
+    "phone": "anxiety/compulsion",
+    "keys": "home/return"
+  }
+}
