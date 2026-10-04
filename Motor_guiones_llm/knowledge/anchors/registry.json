@@ -1,4 +1,0 @@
-{
-  "_nota": "Anclajes vacios a proposito. common.py carga este archivo porque el valor es truthy, asi que el archivo DEBE existir — antes fallaba porque la config apuntaba a un canon externo inexistente. Cuando haya registro de referencias visuales aprobado, rellena 'anclas' aqui.",
-  "anclas": []
-}

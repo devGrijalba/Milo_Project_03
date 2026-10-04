@@ -1,30 +1,4 @@
-# Dependencies
-
-# Build artifacts
-dist/
-build/
-
-# Node
-node_modules/
-
-# Python
-__pycache__/
-*.pyc
-.venv/
-venv/
-
-# Env / secrets
-.env
-.env.*
-!.env.example
-*.key
-*.pem
-
-# Hermes / OS
-.hermes/
-# AGENTS.override.md es el context file personal que Hermes carga EN LUGAR del
-# AGENTS.md commiteado. Es deliberadamente local: no se versiona.
-AGENTS.override.md
-.DS_Store
-Thumbs.db
-*.log
+# El motor vive SOLO en local. El repositorio publica unicamente data/seeds.json
+*
+!data/
+!data/seeds.json
